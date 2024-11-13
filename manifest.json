@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "RespondR - Your customer support assistant",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": [
+      "https://www.ebay.com/*",
+      "https://www.shopify.com/*",
+      "https://web.whatsapp.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+            "*://*.ebay.com/*",
+            "*://*.ebay.co.uk/*",
+            "*://*.ebay.de/*",
+            "*://*.ebay.com.au/*",
+            "*://*.ebay.ca/*",
+            "https://inbox.shopify.com/*",
+            "https://web.whatsapp.com/*"
+          ],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon.png"
+      }
+    }
+  }
+  
