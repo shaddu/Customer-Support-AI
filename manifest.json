@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "RespondR - Your customer support assistant",
     "version": "1.0",
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": [],
     "host_permissions": [
       "https://www.ebay.com/*",
       "https://www.shopify.com/*",
@@ -23,13 +23,43 @@
         "run_at": "document_idle"
       }
     ],
+    "web_accessible_resources": [
+    {
+      "resources": [
+        "eBay.js", "eBay.css"
+      ],
+      "matches": [
+        "*://*.ebay.com/*",
+        "*://*.ebay.co.uk/*",
+        "*://*.ebay.de/*",
+        "*://*.ebay.com.au/*",
+        "*://*.ebay.ca/*"
+      ]
+    },
+    {
+      "resources": [
+        "Shopify.js","Shopify.css"
+      ],
+      "matches": [
+        "https://inbox.shopify.com/*"
+      ]
+    },
+    {
+      "resources": [
+        "whatsapp.js", "whatsapp.css"
+      ],
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ]
+    }
+  ],
     "background": {
       "service_worker": "background.js"
     },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "icons/icon.png"
+        "16": "icons/quickassist.png"
       }
     }
   }

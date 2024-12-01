@@ -1,0 +1,351 @@
+/* Existing button styles */
+.ebay-button {
+    background-color: transparent;
+    border: 1px solid rgb(54, 101, 243); /* Border color: royal blue */
+    color: rgb(54, 101, 243); /* Text color: royal blue */
+    padding: 5px 6px; /* Reduced button size by 15% */
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-right: 5px; /* Space between buttons */
+    font-size: 12.5px;
+}
+
+.ebay-button:first-child {
+    margin-left: 55px; /* Space at the start of the first button */
+}
+
+.ebay-button:hover {
+    background-color: rgb(54, 101, 243); /* Royal blue background on hover */
+    color: white; /* White text color on hover */
+}
+
+#eBayRespondR {
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+/* ebaytooltip styles */
+.ebaytooltip {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    background-color: white;
+    color: #707070; 
+    border: 0.25px solid #707070;
+    padding: 0; /* Remove padding */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 450px;
+    max-height: 250px; /* Adjustable height */
+    overflow: hidden; /* Hide overflow */
+    display: none; /* Hide by default */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.ebaytooltip ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Scrollable list */
+    overflow-y: auto; /* Vertical scrolling */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.ebaytooltip ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.ebaytooltip ul {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.ebaytooltip li {
+    padding: 9px; /* Padding for list items */
+    border-bottom: 1px solid #555; /* Dark grey separator */
+}
+
+.ebaytooltip li:last-child {
+    border-bottom: none;
+}
+
+.ebaytooltip li .title-value {
+    font-size: 12px;
+}
+
+/* Drag handle styles */
+.drag-handle {
+    background-color: #e5e5e5; /* Slightly lighter grey */
+    color: black;
+    padding: 5px;
+    cursor: move;
+    text-align: center;
+    border-top-left-radius: 8px;    
+    border-bottom: 1px solid #555;
+    border-top-right-radius: 8px;
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Center items vertically */
+}
+
+/* Plus icon button styles */
+.plus-icon-button {
+    background-color: orange; /* Royal blue background */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 2px 7px; /* Button padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50%; /* Circular button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.plus-icon-button:hover {
+    background-color: white; /* White background on hover */
+    color: orange; /* Royal blue text on hover */
+    /* border: 1px solid rgb(54, 101, 243); Border on hover */
+}
+
+.plus-icon-button:active {
+    background-color: orange; /* Slightly darker background */
+    color: white; /* White text color */
+}
+
+/* cannedResponseModal styles */
+.cannedResponseModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* On top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Scrollable if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
+}
+
+.cannedResponseModal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered cannedResponseModal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjustable width */
+    max-width: 500px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cannedResponseModal-content h2 {
+    padding-bottom: 10px;
+    color: #707070; 
+}
+
+.cannedResponseModal-content .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.cannedResponseModal-content .close:hover,
+.cannedResponseModal-content .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Chevron icon styles */
+.scroll-down-icon {
+    display: none; /* Initially hidden */
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Show icon when hovering over the list */
+.ebaytooltip ul:hover + .scroll-down-icon {
+    display: block;
+}
+
+/* Rotate icon when hovered */
+.scroll-down-icon:hover {
+    transform: rotate(180deg);
+}
+
+/* Search input styles */
+.search-input {
+    width: 100%; /* Full width */
+    padding: 7px 10px; /* Padding */
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #555;
+    outline: none;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Settings button styles */
+#settingsButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: auto;
+}
+
+#settingsButton svg {
+    color: rgb(8, 8, 8);
+}
+
+#settingsPopup {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0%;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+}
+
+#settingsPopup h3 {
+    margin-top: 0;
+}
+
+#settingsPopup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#settingsPopup input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.button-container {
+    display: flex;
+    /* justify-content: space-between;  */
+}
+
+.right-label {
+    margin-left: auto; /* Pushes the button to the right */
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Align text to the bottom */
+}
+
+.spinner {
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: rgb(54, 101, 243);
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    animation: spin 1s linear infinite;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#cannedResponseForm {
+    display: flex;
+    flex-direction: column;
+}
+#cannedResponseForm input , #cannedResponseForm textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#cannedResponseForm button {
+    padding: 7px;
+    font-size: 14px;
+    background-color: #0064d2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+#cannedResponseForm button:hover {
+    background-color: #0050a8;
+}
+
+/* Voice Input Button Listening Animation */
+.voice-input-button.listening-animation {
+    animation: pulse 1s infinite;
+    background-color:  rgba(158, 179, 243, 1); /* Optional: Change background color */
+    color: #fff; /* Optional: Change text color */
+}
+
+/* Pulse Keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Normal size */
+        box-shadow: 0 0 5px rgba(158, 179, 243, 0.5);
+    }
+    50% {
+        transform: scale(0.9); /* Shrink slightly */
+        box-shadow: 0 0 15px rgba(158, 179, 243, 0.8);
+    }
+    100% {
+        transform: scale(1); /* Back to normal */
+        box-shadow: 0 0 5px rgba(158, 179, 243, 0.5);
+    }
+}
+
+
+.voice-input-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #3565f3;
+    border-radius: 16px;
+    /* padding: 8px; */
+    cursor: pointer;
+}
+
+.voice-input-button svg:hover {
+    fill: white;
+}
+
+.voice-input-button svg {
+    margin: 0;
+    display: block;
+}
+
+.voice-text {
+    display: none;
+    margin-left: 8px;
+    font-size: 14px;
+    color: #3565f3;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.voice-input-button.listening-animation .voice-text {
+    display: inline-block;
+    opacity: 1;
+}
+
+.voice-input-button .voice-icon {
+    transition: transform 0.3s ease-in-out;
+}
