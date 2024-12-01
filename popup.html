@@ -1,5 +1,121 @@
-<html>
-    <body>
-        This is your customer support agent
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickAssist AI - Instructions</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            width: 600px; /* Set popup width */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h3 {
+            margin-top: 0;
+            padding: 10px;
+            background-color: #5a67d8;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        ul {
+            padding: 0 15px;
+        }
+
+        li {
+            margin: 8px 0;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        li span {
+            font-weight: bold;
+            color: #5a67d8;
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eee;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #eee;
+            border: none;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        .tab.active {
+            background-color: #5a67d8;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tab:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            display: none;
+            padding: 15px;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <button class="tab active" data-target="ebay">eBay</button>
+        <button class="tab" data-target="whatsapp">WhatsApp</button>
+        <button class="tab" data-target="shopify">Shopify</button>
+    </div>
+
+    <div id="ebay" class="content active">
+        <h3>Steps to Use QuickAssist AI with eBay</h3>
+        <ul>
+            <li><span>Login:</span> Access the eBay website and navigate to the Messages section (ensure you're using the new UI).</li>
+            <li><span>Activate QuickAssist AI:</span> Click on any user message. QuickAssist AI will load with buttons at the bottom of the screen.</li>
+            <li><span>Quick Replies:</span> Click the <strong>Quick Reply</strong> button to instantly generate a response. Alternatively, write your intent and let QuickAssist AI craft a suitable reply in seconds.</li>
+            <li><span>Improve Existing Messages:</span> Enhance your drafted message by clicking the <strong>Improve It</strong> button to refine grammar and improve clarity.</li>
+            <li><span>Voice Input:</span> Click the <strong>Microphone Icon</strong> to use the voice-to-text feature to dictate your intent and let QuickAssist AI generate a response.</li>
+            <li><span>Canned Responses:</span> Save and reuse common replies with the Quick Reply button for repetitive queries.</li>
+        </ul>
+    </div>
+
+    <div id="whatsapp" class="content">
+        <h3>Steps to Use QuickAssist AI with WhatsApp Web</h3>
+        <ul>
+            <li><span>Login:</span> Open WhatsApp Web and log in to your account.</li>
+            <li><span>Activate QuickAssist AI:</span> Click on any user chat. QuickAssist AI will load with additional buttons: a <strong>Magic Wand icon</strong> and a <strong>Revise icon</strong>.</li>
+            <li><span>Quick Replies:</span> Use the Magic Wand icon to instantly generate a response or write your intent, and let QuickAssist AI create a professional reply for you.</li>
+            <li><span>Improve Existing Messages:</span> If you've already drafted a message, click the Revise icon to check grammar, enhance clarity, and maintain a professional tone.</li>
+        </ul>
+    </div>
+
+    <div id="shopify" class="content">
+        <h3>Steps to Use QuickAssist AI with Shopify Inbox</h3>
+        <ul>
+            <li><span>Login:</span> Access Shopify Inbox and log in.</li>
+            <li><span>Activate QuickAssist AI:</span> Select any user chat. QuickAssist AI will load with extra icons on the toolbar.</li>
+            <li><span>Quick Replies:</span> Click the Magic Wand icon to generate instant responses. Alternatively, input your intent, and QuickAssist AI will generate a professional reply.</li>
+            <li><span>Improve Existing Messages:</span> Use the Revise icon to refine grammar and clarity in pre-drafted messages.</li>
+            <li><span>Voice Input:</span> Click the Microphone Icon to use the voice-to-text feature to dictate your intent and let QuickAssist AI generate a response.</li>
+        </ul>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
 </html>
