@@ -25,7 +25,7 @@ git clone https://github.com/shaddu/QuickAssist-AI.git
 3. Enable "Developer mode" at the top right.
 4. Click "Load unpacked" and select the cloned `QuickAssist-AI` directory.  
   
-## Usage
+## How to use/test
 
 **Steps to Use QuickAssist AI with eBay:**  
 - **Login**: Access the eBay website and navigate to the **Messages section** (ensure you're using the new UI).  
@@ -34,7 +34,6 @@ git clone https://github.com/shaddu/QuickAssist-AI.git
 - **Improve Existing Messages**: Enhance your drafted message by clicking the **Improve It** button to refine grammar and improve clarity.
 - **Voice Input**: Click the **Microphone Icon** to voice-to-text feature to dictate your intent instead of typing and let QUickAssit generate response for you.
 - **Canned Responses**: Click the **Quick Reply** button to instantly generate a response. Alternatively, write your intent and let QuickAssist AI craft a suitable reply in seconds.  
-
 
 ---
 
@@ -48,7 +47,7 @@ git clone https://github.com/shaddu/QuickAssist-AI.git
 
 **Steps to Use QuickAssist AI with Shopify Inbox:**  
 - **Login**: Access [Shopify Inbox](https://inbox.shopify.com/) and log in.  
-- **Activate QuickAssist AI**: Select any user chat. QuickAssist AI will load with an extra **Magic Wand icon**.  
+- **Activate QuickAssist AI**: Select any user chat. QuickAssist AI will load with an extra icons on toolbar.  
 - **Quick Replies**: Click the **Magic Wand icon** to generate instant responses. Alternatively, input your intent, and QuickAssist AI will generate a professional reply.  
 - **Improve Existing Messages**: Use the **Revise icon** to refine grammar and clarity in pre-drafted messages.  
 - **Voice Input**: Click the **Microphone Icon** to voice-to-text feature to dictate your intent instead of typing and let QUickAssit generate response for you.
